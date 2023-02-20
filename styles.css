@@ -8,880 +8,547 @@ body {
   color: white;
   background-color: #141d2f;
 }
-/* Desktop media query*/
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50rem;
+  height: 2.3rem;
+  margin-top: 10rem;
+  margin-left: 15rem;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50rem;
+  height: 4.3rem;
+  border-radius: 0.9rem;
+  margin-top: 4rem;
+  margin-left: 15rem;
+  background-color: #1e2a47;
+}
+.logo-sun {
+  margin-left: 36rem;
+  margin-top: 0rem;
+  border: none;
+  color: #90a4d4;
+  background-color: #141d2f;
+  cursor: pointer;
+}
+.placeholder {
+  margin-left: -25rem;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  color: #fff;
+  background-color: #1e2a47;
+  border: none;
+}
+.search-btn {
+  width: 6rem;
+  height: 3.1rem;
+  margin-right: 0.6rem;
+  background-color: #60abff;
+  color: #ffff;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 10rem auto auto;
+  grid-gap: 1rem;
+  width: 50rem;
+  height: 29rem;
+  margin-left: 15rem;
+  margin-top: 3rem;
+  border-radius: 0.9rem;
+  background-color: #1e2a47;
+}
+.item1 {
+  grid-column: 1/2;
+  grid-row: 1/4;
+}
+.cat-photo {
+  width: 9rem;
+  height: 9rem;
+  border: 0.4rem;
+  margin-top: 1.6rem;
+  margin-left: 1.6rem;
+  border-radius: 12rem;
+}
+.item2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.otoCat-text {
+  margin-top: 1.4rem;
+  margin-left: 0.5rem;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+.joined {
+  margin-top: -1.8rem;
+  margin-left: 25rem;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+}
+.atotoCat {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+  margin-left: 0.5rem;
+  color: #0079ff;
+}
+.nobio {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+  margin-left: 0.5rem;
+  margin-top: 3rem;
+}
+.nobio-lorem {
+  display: none;
+  margin-top: 2rem;
+  margin-left: 0.5rem;
+  width: 29rem;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #ffff;
+}
+.item3 {
+  width: 33rem;
+  height: 6.3rem;
+  margin-top: 0.4rem;
+  background-color: #141d2f;
+  border-radius: 0.6rem;
+}
+.repos {
+  margin-left: 1.9rem;
+  margin-top: 1.5rem;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.1rem;
+  color: #ffffff;
+}
+.pone {
+  margin-left: 1.9rem;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.folowers {
+  margin-left: 12rem;
+  margin-top: -3rem;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.1rem;
+  color: #ffffff;
+}
+.ptwo {
+  margin-left: 12rem;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.following {
+  margin-left: 23rem;
+  margin-top: -3.1rem;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.1rem;
+  color: #ffffff;
+}
+.pthree {
+  margin-left: 23rem;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.item4 {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  width: 28rem;
+  height: 7rem;
+}
+.location {
+  margin: 0;
+  margin-top: 0.5rem;
+}
+.sanfrancisco {
+  margin-left: 1.4rem;
+  margin-top: -1.3rem;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+  color: #ffffff;
+}
+.link-logo {
+  margin-top: 1rem;
+}
+.link {
+  cursor: pointer;
+  margin-top: 0.5rem;
+  text-decoration: none;
+  color: blue;
+}
+.tweeter-logo {
+  margin-left: 5rem;
+}
+.available {
+  margin-top: -3.7rem;
+  margin-left: 17.5rem;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+  color: #ffffff5f;
+}
+.company-logo {
+  margin-top: 1.3rem;
+  margin-left: 15rem;
+}
+.github-link {
+  margin-top: -1rem;
+  padding-left: 0.8rem;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  color: #ffffff;
+  text-decoration: none;
+}
 
 @media screen and (max-width: 1440px) {
   .container-nav {
-    position: relative;
     width: 45rem;
-    margin-left: 12rem;
-    margin-top: 3rem;
-  }
-  .img-sun {
-    margin-left: 41.5rem;
+    height: 4.3rem;
   }
   .logo-sun {
-    position: absolute;
-    top: 0.2rem;
-    right: 4rem;
-    color: #fff;
-    background-color: #141d2f;
-    cursor: pointer;
-    border: none;
+    margin-left: 30rem;
   }
-  .text {
-    position: absolute;
-    left: 0.5rem;
-  }
-
-  .placeholder {
-    font-family: "Space Mono";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.1rem;
-    line-height: 1.5rem;
-    padding-left: 4.5rem;
-    padding-top: 1.5rem;
-  }
-
   .container {
-    position: relative;
-    width: 45.6rem;
-    height: 4.3rem;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    border-radius: 12px;
-    margin-top: 2rem;
-    margin-left: 12rem;
-  }
-  input {
     width: 45rem;
-    height: 4.3rem;
-    display: block;
-    border-radius: 18px;
-    font-size: 10px;
-    padding: 8px 300px 23px 20px;
-    margin-bottom: 1rem;
-    border: none;
-    background-color: #1e2a47;
-    margin-bottom: 1.5rem;
-    font-size: 1rem;
-    color: white;
-  }
-  .search-btn {
-    position: absolute;
-    cursor: pointer;
-    top: -0.3rem;
-    right: 1.5rem;
-    width: 6rem;
-    height: 3.5rem;
-    border-radius: 10px;
-    padding: 12px 20px;
-    background-color: blue;
-    color: #fff;
   }
   .searchLogo {
-    position: absolute;
-    top: 0.7rem;
-    left: 2rem;
-    width: 1;
-    height: 1.5rem;
-    color: #0079ff;
+    padding-left: 2rem;
   }
-  ul {
-    list-style: none;
+  .placeholder {
+    margin-left: -17rem;
+  }
+  .search-btn {
+    margin-left: -3rem;
+    padding: 0.3rem 1rem 0.3rem 1rem;
   }
   .grid-container {
-    display: grid;
-    grid-template-columns: 10.5rem auto auto auto;
-    grid-template-rows: 8rem 7rem 7rem;
-    grid-gap: 2rem;
-    background-color: #1e2a47;
     width: 45rem;
-    height: 26.1rem;
-    margin: 2rem 1.5rem 3rem 12rem;
-    border-radius: 0.9rem;
-    position: relative;
+    height: 27.7rem;
   }
-  .item1 {
-    grid-column: 1/1;
-    grid-row: 1/4;
-  }
-  .item2 {
-    grid-column: 2/5;
-  }
-  .item3 {
-    background-color: #0c152b;
-    grid-column: 2/5;
-    border-radius: 1rem;
-    margin-right: 1rem;
-    width: 31rem;
-  }
-  .item4 {
-    background-color: #1e2a47;
-    grid-column: 2/5;
-    width: 31rem;
-  }
-
   .cat-photo {
-    display: block;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-top: 4rem;
     width: 7.3rem;
     height: 7.3rem;
-    border-radius: 12rem;
-    background-color: #fff;
-  }
-  h2 {
-    width: 11rem;
-    height: 2.4rem;
-    padding-left: 1rem;
-    padding-top: 1.5rem;
-    font-family: "Space Mono";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-    color: #ffff;
   }
   .joined {
-    position: absolute;
-    width: 10.3rem;
-    height: 2.4rem;
-    top: 2rem;
-    right: 3rem;
-    font-family: "Space Mono";
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.3rem;
-    font-size: 0.9rem;
-    text-align: right;
-    color: #fff;
-  }
-  .atotoCat {
-    position: absolute;
-    top: 3.5rem;
-    width: 4.9rem;
-    height: 1.5rem;
-    text-align: left;
-    color: #0079ff;
-    padding-left: 1rem;
-    font-family: "Space Mono";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-  .nobio {
-    position: absolute;
-    top: 6.5rem;
-    left: 13.5rem;
-    width: 80rem;
-    font-family: "Space Mono";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.9rem;
-    line-height: 1.5rem;
-    mix-blend-mode: normal;
-    opacity: 0.75;
-    color: #ffff;
-  }
-  .nobio-lorem {
-    display: none;
-    position: absolute;
-    top: 10rem;
-    left: 1.6rem;
-    width: 30rem;
-    font-family: "Space Mono";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1 rem;
-    line-height: 1.5rem;
-    mix-blend-mode: normal;
-    opacity: 0.75;
-    color: #ffff;
-  }
-  .repos {
-    position: absolute;
-    top: 11.3rem;
-    left: 14rem;
-  }
-  .folowers {
-    position: absolute;
-    right: 17.2rem;
-    top: 11.5rem;
-  }
-  .following {
-    position: absolute;
-    left: 32rem;
-    top: 11.5rem;
-  }
-  .pone {
-    position: absolute;
-    top: 13rem;
-    left: 14rem;
-  }
-  .ptwo {
-    position: absolute;
-    top: 13rem;
-    left: 22.5rem;
-  }
-  .pthree {
-    position: absolute;
-    top: 13rem;
-    left: 32rem;
-  }
-  .sanfrancisco {
-    position: absolute;
-    top: 19.5rem;
-    left: 15rem;
-    font-family: "Gill Sans";
-    color: #ffffffc7;
-    font-size: 1.3rem;
-  }
-  .location {
-    position: absolute;
-    top: 19.4rem;
-    left: 13rem;
-    color: #fff;
-  }
-  .link {
-    position: absolute;
-    top: 23rem;
-    left: 15rem;
-    color: blue;
-  }
-  .link-logo {
-    position: absolute;
-    top: 23rem;
-    left: 12.8rem;
-  }
-  .teweeter-logo {
-    position: absolute;
-    top: 20rem;
-    right: 17rem;
-  }
-  .available {
-    position: absolute;
-    top: 20rem;
-    right: 10rem;
-    color: #ffffff5f;
-  }
-  .company-logo {
-    position: absolute;
-    top: 23rem;
-    right: 17rem;
-  }
-  .github-link {
-    position: absolute;
-    top: 23rem;
-    right: 12rem;
-    color: #ffffffbf;
-  }
-}
-
-/* Tablet media queries*/
-
-@media screen and (max-width: 768px) {
-  .container-nav {
-    position: relative;
-    width: 25rem;
-    margin-left: 12rem;
-    margin-top: 3rem;
-  }
-  .img-sun {
-    margin-left: 33rem;
-  }
-  .logo-sun {
-    position: absolute;
-    top: 0.2rem;
-    left: 30rem;
-    color: #fff;
-    background-color: #141d2f;
-    cursor: pointer;
-    border: none;
-  }
-  .text {
-    position: absolute;
-    left: 0.3rem;
-  }
-
-  .placeholder {
-    font-family: "Space Mono";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.3rem;
-    line-height: 1.5rem;
-    padding-left: 4.5rem;
-    padding-top: 1.5rem;
-  }
-
-  .container {
-    position: relative;
-    width: 35rem;
-    height: 4.3rem;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    border-radius: 12px;
-    margin-top: 2rem;
-    margin-left: 12rem;
-  }
-  input {
-    width: 35rem;
-    height: 4.3rem;
-    display: block;
-    border-radius: 18px;
-    font-size: 10px;
-    padding: 8px 300px 23px 20px;
-    margin-bottom: 1rem;
-    border: none;
-    background-color: #1e2a47;
-    margin-bottom: 1.5rem;
-    font-size: 1rem;
-    color: white;
-  }
-  .search-btn {
-    position: absolute;
-    cursor: pointer;
-    top: -0.3rem;
-    right: 0.5rem;
-    width: 6rem;
-    height: 3.5rem;
-    border-radius: 10px;
-    padding: 12px 20px;
-    background-color: blue;
-    color: #fff;
-  }
-  .searchLogo {
-    position: absolute;
-    top: 0.7rem;
-    left: 2rem;
-    width: 1;
-    height: 1.5rem;
-    color: #0079ff;
-  }
-  ul {
-    list-style: none;
-  }
-  .grid-container {
-    display: grid;
-    grid-template-columns: 10.5rem auto auto auto;
-    grid-template-rows: 8rem 7rem 7rem;
-    grid-gap: 2rem;
-    background-color: #1e2a47;
-    width: 35rem;
-    height: 30rem;
-    margin: 2rem 1.5rem 3rem 12rem;
-    border-radius: 0.9rem;
-    position: relative;
-  }
-  .item1 {
-    grid-column: 1/1;
-    grid-row: 1/1;
-  }
-  .item2 {
-    grid-column: 2/5;
+    margin-left: 23rem;
   }
   .item3 {
-    background-color: #0c152b;
-    grid-column: 1/5;
-    margin-top: 4rem;
-    border-radius: 1rem;
-    margin-right: 1rem;
-    margin-left: 1.5rem;
-    width: 31rem;
-    height: 5.7rem;
+    width: 30rem;
+    height: 5.3rem;
+  }
+  .repos {
+    margin-left: 1.8rem;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+  }
+  .pone {
+    margin-left: 1.8rem;
+    font-size: 1.3rem;
+  }
+  .folowers {
+    font-size: 0.8rem;
+  }
+  .following {
+    font-size: 0.8rem;
+  }
+  .pthree {
+    font-size: 1.3rem;
   }
   .item4 {
-    background-color: #1e2a47;
-    grid-column: 1/5;
-    width: 26.8rem;
-    height: 5rem;
-    margin-top: 2.5rem;
-    margin-right: 7rem;
-    margin-left: 2rem;
+    width: 25rem;
   }
-
+  .sanfrancisco {
+    font-size: 0.9rem;
+  }
+  .available {
+    font-size: 0.9rem;
+  }
+  .github-link {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container-nav {
+    width: 35.8rem;
+    height: 1.3rem;
+  }
+  .logo-sun {
+    margin-left: 28rem;
+  }
+  .container {
+    width: 35.8rem;
+  }
+  .searchLogo {
+    padding-left: 1.5rem;
+  }
+  .placeholder {
+    margin-left: -20rem;
+  }
+  .search-btn {
+    width: 5rem;
+    height: 1.5rem;
+    padding: 1rem 4.7rem 2.5rem 1.8rem;
+    margin: 0.3rem 0.6rem 0.3rem -11rem;
+    font-size: 1.2rem;
+  }
+  .grid-container {
+    grid-template-columns: auto;
+    grid-template-rows: 10rem auto auto;
+    width: 35.8rem;
+    height: 30rem;
+  }
+  .item1 {
+    grid-column: 1/2;
+  }
   .cat-photo {
-    margin-left: 2rem;
-    margin-right: 1rem;
-    margin-top: 1rem;
-    width: 8rem;
-    height: 8rem;
-    border-radius: 12rem;
-    background-color: #fff;
+    width: 7.3rem;
+    height: 7.3rem;
   }
-  h2 {
-    width: 10rem;
-    height: 2.4rem;
-    padding-left: 0rem;
-    padding-top: 1.5rem;
-    font-family: "Space Mono";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-    color: #ffff;
+  .item2 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .otoCat-text {
+    margin-left: 11rem;
   }
   .joined {
-    position: absolute;
-    width: 10.3rem;
-    height: 2.4rem;
-    top: 5.5rem;
-    right: 15.5rem;
-    font-family: "Space Mono";
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.3rem;
-    font-size: 0.9rem;
-    text-align: right;
-    color: #fff;
+    margin-top: 2rem;
+    margin-left: 11rem;
   }
   .atotoCat {
-    position: absolute;
-    top: 3.5rem;
-    width: 4.9rem;
-    height: 1.5rem;
-    text-align: left;
-    color: #0079ff;
-    padding-left: 0rem;
-    font-family: "Space Mono";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.5rem;
+    margin-left: 11rem;
+    margin-top: -3.5rem;
   }
   .nobio {
     display: none;
-    position: absolute;
-    top: 6.5rem;
-    left: 13.5rem;
-    width: 80rem;
-    font-family: "Space Mono";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.9rem;
-    line-height: 1.5rem;
-    mix-blend-mode: normal;
-    opacity: 0.75;
-    color: #ffff;
   }
   .nobio-lorem {
     display: inline-block;
-    position: absolute;
-    top: 10rem;
-    left: 1.6rem;
+    margin-top: 5rem;
+    margin-left: 2.5rem;
+  }
+  .item3 {
     width: 30rem;
-    font-family: "Space Mono";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1 rem;
-    line-height: 1.5rem;
-    mix-blend-mode: normal;
-    opacity: 0.75;
-    color: #ffff;
+    height: 5.3rem;
+    margin-top: 3rem;
+    margin-left: -11rem;
   }
   .repos {
-    position: absolute;
-    top: 14.9rem;
-    left: 4rem;
-    font-family: "Space Mono";
-    font-style: normal;
-    font-weight: normal;
-  }
-  .folowers {
-    position: absolute;
-    right: 17.2rem;
-    top: 15rem;
-    font-family: "Space Mono";
-    font-style: normal;
-    font-weight: normal;
-  }
-  .following {
-    position: absolute;
-    left: 23rem;
-    top: 15rem;
-    font-family: "Space Mono";
-    font-style: normal;
-    font-weight: normal;
+    margin-left: 1.8rem;
+    margin-top: 1rem;
+    font-size: 0.8rem;
   }
   .pone {
-    position: absolute;
-    top: 17rem;
-    left: 4rem;
-    font-size: 1.4rem;
-    font-weight: bold;
-  }
-  .ptwo {
-    position: absolute;
-    top: 17rem;
-    left: 13rem;
-    font-size: 1.4rem;
-    font-weight: bold;
-  }
-  .pthree {
-    position: absolute;
-    top: 17rem;
-    left: 23rem;
-    font-size: 1.4rem;
-    font-weight: bold;
-  }
-  .sanfrancisco {
-    position: absolute;
-    top: 22rem;
-    left: 4rem;
-    font-family: "Space Mono";
-    color: #ffffffc7;
+    margin-left: 1.8rem;
     font-size: 1.3rem;
   }
-  .location {
-    position: absolute;
-    top: 22rem;
-    left: 2rem;
-    color: #fff;
+  .folowers {
+    font-size: 0.8rem;
   }
-  .link {
-    position: absolute;
-    top: 24.5rem;
-    left: 4rem;
-    color: #fff;
+  .following {
+    font-size: 0.8rem;
+  }
+  .pthree {
+    font-size: 1.3rem;
+  }
+  .item4 {
+    margin-left: -11rem;
+    width: 25rem;
+  }
+  .sanfrancisco {
+    font-size: 0.9rem;
   }
   .link-logo {
-    position: absolute;
-    top: 24.5rem;
-    left: 1.8rem;
-  }
-  .teweeter-logo {
-    position: absolute;
-    top: 22rem;
-    right: 17rem;
+    margin-top: 1rem;
   }
   .available {
-    position: absolute;
-    top: 22rem;
-    right: 10rem;
-    color: #ffffff5f;
-  }
-  .company-logo {
-    position: absolute;
-    top: 25rem;
-    right: 17rem;
+    font-size: 0.9rem;
   }
   .github-link {
-    position: absolute;
-    top: 25rem;
-    right: 12rem;
-    color: #ffffffbf;
+    font-size: 0.9rem;
   }
 }
-/* Mobile media queries*/
-
-@media screen and (max-width: 375px) {
+@media screen and (max-width:375px) {
   .container-nav {
-    position: relative;
     width: 20.4rem;
     height: 2.3rem;
   }
-  .img-sun {
-    margin-left: 18.7rem;
-    margin-top: 0.5rem;
-  }
   .logo-sun {
-    position: absolute;
-    top: 0.7rem;
-    left: 15.5rem;
-    color: #fff;
-    background-color: #141d2f;
-    cursor: pointer;
-    border: none;
+    margin-left: 10rem;
   }
-  .text {
-    position: absolute;
-    padding-top: 0.5rem;
-    left: 0.3rem;
-  }
-
-  .placeholder {
-    font-family: "Space Mono";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.3rem;
-    line-height: 1.5rem;
-    padding-left: 2rem;
-    padding-top: 1.5rem;
-  }
-
-  .container {
-    position: relative;
-    width: 20.4rem;
-    height: 4.3rem;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    border-radius: 12px;
-    margin-top: 2rem;
-    margin-left: 12rem;
-  }
-  input {
-    width: 20.4rem;
-    height: 4.3rem;
-    display: block;
-    border-radius: 18px;
-    font-size: 10px;
-    padding: 8px 300px 23px 20px;
-    margin-bottom: 1rem;
-    border: none;
-    background-color: #1e2a47;
-    margin-bottom: 1.5rem;
-    font-size: 1rem;
-    color: white;
+  .placeholder{
+    margin-left: -10rem;
+    font-weight: 200;
+    font-size: 0.8rem;
   }
   .search-btn {
-    position: absolute;
-    cursor: pointer;
-    top: -0.3rem;
-    right: 0.1rem;
-    width: 6rem;
-    height: 3.5rem;
-    border-radius: 10px;
-    padding: 12px 20px;
-    background-color: blue;
-    color: #fff;
+    padding: 0.4rem 4.3rem 1.9rem 1.1rem;
+    margin: 0.3rem 0.6rem 0.3rem -11rem;
+    font-size: 1.1rem;
   }
-  .searchLogo {
-    position: absolute;
-    top: 0.7rem;
-    left: 1.5rem;
-    width: 1;
-    height: 1.5rem;
-    color: #0079ff;
-  }
-  ul {
-    list-style: none;
+  .container{
+    width: 20.4rem;
+    height: 3.7rem;
   }
   .grid-container {
-    display: grid;
-    grid-template-columns: 10.5rem auto auto auto;
-    grid-template-rows: 8rem 7rem 7rem;
-    grid-gap: 2rem;
-    background-color: #1e2a47;
     width: 20.4rem;
     height: 32.3rem;
-    margin: 2rem 1.5rem 3rem 12rem;
-    border-radius: 0.9rem;
-    position: relative;
   }
-  .item1 {
-    grid-column: 1/1;
-    grid-row: 1/1;
-  }
-  .item2 {
-    grid-column: 1/5;
-  }
-  .item3 {
-    background-color: #0c152b;
-    grid-column: 1/5;
-    grid-row: 2/3;
-    margin-top: 4rem;
-    border-radius: 1rem;
-    margin-right: 1rem;
-    margin-left: 1.5rem;
-    width: 17.4rem;
-    height: 5.3rem;
-  }
-  .item4 {
-    background-color: #1e2a47;
-    grid-column: 1/5;
-   grid-row: 3/4;
-    width: 17.4rem;
-    height: 7rem;
-    margin-right: 7rem;
-    margin-left: 1.5rem;
-    margin-top: 0.4rem;
-  }
-
   .cat-photo {
-    margin-left: 2rem;
-    margin-right: 1rem;
-    margin-top: 1.5rem;
-    width: 5rem;
-    height: 5rem;
-    border-radius: 12rem;
-    background-color: #fff;
+    width: 4.3rem;
+    height: 4.3rem;
   }
-  h2 {
-    position: absolute;
-    top: 0rem;
-    left: 8rem;
-    font-family: "Space Mono";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-    color: #ffff;
-  }
-  .joined {
-    position: absolute;
-    width: 10.3rem;
-    height: 2.4rem;
-    top: 5.5rem;
-    right: 5.5rem;
-    font-family: "Space Mono";
-    font-style: normal;
-    font-weight: 200;
-    line-height: 1.3rem;
-    font-size: 0.9rem;
-    text-align: right;
-    color: #fff;
+  .otoCat-text {
+    margin-left: 8rem;
+    font-size: 1rem;
   }
   .atotoCat {
-    position: absolute;
-    top: 3.5rem;
-    left: 8rem;
-    width: 4.9rem;
-    height: 1.5rem;
-    text-align: left;
-    color: #0079ff;
-    padding-left: 0rem;
-    font-family: "Space Mono";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.5rem;
+    margin-left: 8rem;
+    margin-top: -3rem;
+    font-size: 0.8rem;
   }
-  .nobio {
-    display: none;
-    position: absolute;
-    top: 6.5rem;
-    left: 13.5rem;
-    width: 80rem;
-    font-family: "Space Mono";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.9rem;
-    line-height: 1.5rem;
-    mix-blend-mode: normal;
-    opacity: 0.75;
-    color: #ffff;
+  .joined {
+    margin-top: 0.8rem;
+    margin-left: 8rem;
+    font-size: 0.8rem;
   }
   .nobio-lorem {
     display: inline-block;
-    position: absolute;
-    top: 8rem;
-    left: 1.6rem;
-    width: 18rem;
-    font-family: "Space Mono";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.8rem;
-    line-height: 1.5rem;
-    mix-blend-mode: normal;
-    opacity: 0.75;
-    color: #ffff;
+    width: 16.5rem;
+    margin-top: 3rem;
+    margin-left: 2rem;
+  }
+  .item3 {
+    width: 17.4rem;
+    height: 5.3rem;
+    margin-top: 2rem;
+    margin-left: -5.5rem;
   }
   .repos {
-    position: absolute;
-    top: 15rem;
-    left: 2.4rem;
-    font-family: "Space Mono";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 0.9rem;
-  }
-  .folowers {
-    position: absolute;
-    right: 10rem;
-    top: 15rem;
-    font-family: "Space Mono";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 0.9rem;
-  }
-  .following {
-    position: absolute;
-    left: 12.4rem;
-    top: 15rem;
-    font-family: "Space Mono";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 0.9rem;
+    margin-left: 1.8rem;
+    margin-top: 1rem;
+    font-size: 0.6rem;
   }
   .pone {
-    position: absolute;
-    top: 16.5rem;
-    left: 3.4rem;
-    font-size: 1.2rem;
-    
+    margin-left: 1.8rem;
+    font-size: 1rem;
   }
-  .ptwo {
-    position: absolute;
-    top: 16.5rem;
-    left: 7.4rem;
-    font-size: 1.2rem;
-    
+  .folowers {
+    font-size: 0.6rem;
+    margin-left: 7rem;
+  }
+  .ptwo{
+    margin-left: 7rem;
+    font-size: 0.88rem;
+  }
+  .following{
+    margin-left: 12rem;
+    font-size:0.6;
   }
   .pthree {
-    position: absolute;
-    top: 16.5rem;
-    left: 13.6rem;
-    font-size: 1.2rem;
-   
+    margin-left: 12rem;
+    font-size: 1rem;
   }
-  .sanfrancisco {
-    position: absolute;
-    top: 22rem;
-    left: 4rem;
-    font-family: "Space Mono";
-    color: #ffffff;
-    font-size: 1.3rem;
-    font-weight: 200;
-    line-height: 0.8rem;
+  .item4 {
+    margin-left: -5rem;
+    width: 17rem;
+    height: 8rem;
+  }
+  .sanfrancisco{
+    margin-top: -1.4rem;
+    margin-left: 2rem;
+    font-size: 0.8rem;
   }
   .location {
-    position: absolute;
-    top: 21.8rem;
-    left: 2rem;
-    color: #fff;
-  }
-  .link {
-    position: absolute;
-    top: 24.5rem;
-    left: 4rem;
-    color: #fff;
+    margin: 0;
+    margin-top: -3rem;
   }
   .link-logo {
-    position: absolute;
-    top: 24.5rem;
-    left: 1.8rem;
+    margin-top: 1rem;
   }
-  .teweeter-logo {
-    position: absolute;
-    top: 27rem;
-    right: 17.1rem;
+  .link {
+    margin-top: 1rem;
+    margin-left: 0.7rem;
+    font-size: 0.8rem;
+  }
+  .tweeter-logo {
+    margin-left: 1rem;
   }
   .available {
-    position: absolute;
-    top: 27rem;
-    right: 10.6rem;
-    color: #ffffff5f;
-    font-family: "Space Mono";
-    color: #ffffff;
-    font-size: 1rem;
-  font-weight: 200;
-    line-height: 1.1rem;
+    margin-top: 1rem;
+    margin-left: 2.5rem;
+    font-size: 0.8rem;
   }
   .company-logo {
-    position: absolute;
-    top: 29rem;
-    right: 17rem;
+    margin-top: 1.3rem;
+    margin-left: 0.2rem;
   }
   .github-link {
-    position: absolute;
-    top: 29rem;
-    right: 12.5rem;
-    color: #ffffffbf;
+    /* margin-top: -1rem; */
+    margin-left: 0rem;
+    font-size: 0.8rem; 
   }
 }
