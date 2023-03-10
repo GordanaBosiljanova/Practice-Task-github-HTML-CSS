@@ -1,78 +1,147 @@
+:root,
+:root.light {
+  --image-theme: url("./assets/icon-moon.svg");
+  --color-bg: rgb(251, 251, 251);
+  --color-fg: rgba(105, 124, 154);
+  --color-pg: rgba(246, 248, 255);
+  --color-white-black: rgb(0, 0, 0);
+}
+
+:root.dark {
+  --image-theme: url("./assets/icon-sun.svg");
+  --color-bg: rgb(30, 42, 71);
+  --color-fg: #ffffff;
+  --color-pg: rgb(20, 29, 47);
+  --color-white-black: rgb(255, 255, 255);
+}
+
 * {
-  box-sizing: border-box;
   margin: 0;
-  padding: 0;
 }
+
 body {
-  font-family: sans-serif;
-  color: white;
-  background-color: #141d2f;
+  background-color: var(--color-fg);
+  color: var(--color-fg);
+  font-size: 15px;
+  height: 600px;
 }
-.container-nav {
+
+.main-grid {
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+  padding: 1em;
+  border-radius: 15px;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+  border: 0px;
+}
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-white-black);
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+  background-color: var(--color-pg);
+}
+.name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-white-black);
+}
+.git-hub-container {
+  width: 730px;
+  background-color: var(--color-pg);
+}
+.title-and-mode-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 50rem;
-  height: 2.3rem;
-  margin-top: 10rem;
-  margin-left: 15rem;
+  height: 38px;
+  width: 730px;
+  border-radius: 0px;
+  background-color: var(--color-pg);
+  padding-bottom: 2rem;
 }
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 50rem;
-  height: 4.3rem;
-  border-radius: 0.9rem;
-  margin-top: 4rem;
-  margin-left: 15rem;
-  background-color: #1e2a47;
+.search-container {
+  width: 750px;
+  height: 69px;
+  position: relative;
 }
-.logo-sun {
-  margin-left: 36rem;
-  margin-top: 0rem;
-  border: none;
-  color: #90a4d4;
-  background-color: #141d2f;
+.bio {
+  text-overflow: ellipsis;
+}
+
+#search-input {
+  height: 69px;
+  width: 730px;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+  border-radius: 15px;
+  border: 0px;
+  background-color: var(--color-bg);
+  font-size: 2rem;
+}
+
+#search-input::placeholder {
+  color: rgba(105, 124, 154);
+  font-size: 1.2rem;
+}
+input[name="search-input"] {
+  background-image: url("./assets/icon-search.svg");
+  background-position: 5% 50%;
+  background-repeat: no-repeat;
+}
+.theme-mode {
+  background-image: var(--image-theme);
+  background-position-x: left;
+  background-repeat: no-repeat;
+  background-size: 2em;
+  padding-right: 1em;
+}
+#mode {
+  border: 0px;
+  background-color: var(--color-pg);
   cursor: pointer;
 }
-.placeholder {
-  margin-left: -25rem;
-  font-family: "Space Mono";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.1rem;
-  line-height: 1.5rem;
-  color: #fff;
-  background-color: #1e2a47;
+
+#btn-search {
+  position: absolute;
+  border-radius: 5px;
+  right: 1.5rem;
+  z-index: 2;
   border: none;
-}
-.search-btn {
-  width: 6rem;
-  height: 3.1rem;
-  margin-right: 0.6rem;
-  background-color: #60abff;
-  color: #ffff;
+  height: 50px;
+  width: 106px;
+  cursor: pointer;
+  color: white;
+  background-color: #1e90ff;
+  top: calc(35% - 24px / 2 - 0.5px);
   font-family: "Space Mono";
   font-style: normal;
   font-weight: 700;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  border: none;
-  border-radius: 0.5rem;
-  cursor: pointer;
+  font-size: 16px;
+  line-height: 24px;
+}
+#btn-search:hover {
+  opacity: 60%;
+}
+
+.div-space {
+  padding: 1rem;
+  background-color: var(--color-pg);
 }
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: 10rem auto auto;
   grid-gap: 1rem;
-  width: 50rem;
-  height: 29rem;
-  margin-left: 15rem;
+  width: 730px;
+  height: 444px;
   margin-top: 3rem;
   border-radius: 0.9rem;
-  background-color: #1e2a47;
+  background-color: var(--color-bg);
 }
 .item1 {
   grid-column: 1/2;
@@ -142,7 +211,7 @@ body {
   width: 33rem;
   height: 6.3rem;
   margin-top: 0.4rem;
-  background-color: #141d2f;
+  background-color: var(--color-pg);
   border-radius: 0.6rem;
 }
 .repos {
@@ -153,7 +222,7 @@ body {
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 1.1rem;
-  color: #ffffff;
+  color: var(--color-fg);
 }
 .pone {
   margin-left: 1.9rem;
@@ -163,7 +232,7 @@ body {
   font-size: 1.5rem;
   line-height: 2rem;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--color-fg);
 }
 .folowers {
   margin-left: 12rem;
@@ -173,7 +242,7 @@ body {
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 1.1rem;
-  color: #ffffff;
+  color: var(--color-fg);
 }
 .ptwo {
   margin-left: 12rem;
@@ -183,7 +252,7 @@ body {
   font-size: 1.3rem;
   line-height: 2rem;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--color-fg);
 }
 .following {
   margin-left: 23rem;
@@ -193,7 +262,7 @@ body {
   font-weight: 400;
   font-size: 1.3rem;
   line-height: 1.1rem;
-  color: #ffffff;
+  color: var(--color-fg);
 }
 .pthree {
   margin-left: 23rem;
@@ -203,352 +272,233 @@ body {
   font-size: 1.4rem;
   line-height: 2rem;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--color-fg);
 }
 .item4 {
-  grid-column: 2/3;
-  grid-row: 3/4;
-  width: 28rem;
-  height: 7rem;
-}
-.location {
-  margin: 0;
-  margin-top: 0.5rem;
-}
-.sanfrancisco {
-  margin-left: 1.4rem;
-  margin-top: -1.3rem;
-  font-family: "Space Mono";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.2rem;
-  line-height: 1.3rem;
-  color: #ffffff;
-}
-.link-logo {
-  margin-top: 1rem;
-}
-.link {
-  cursor: pointer;
-  margin-top: 0.5rem;
-  text-decoration: none;
-  color: blue;
-}
-.tweeter-logo {
-  margin-left: 5rem;
-}
-.available {
-  margin-top: -3.7rem;
-  margin-left: 17.5rem;
-  font-family: "Space Mono";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.2rem;
-  line-height: 1.3rem;
-  color: #ffffff5f;
-}
-.company-logo {
-  margin-top: 1.3rem;
-  margin-left: 15rem;
-}
-.github-link {
-  margin-top: -1rem;
-  padding-left: 0.8rem;
-  font-family: "Space Mono";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.3rem;
-  color: #ffffff;
-  text-decoration: none;
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 480px;
+  height: 85px;
+  margin-left: 0rem;
+  padding-bottom: 2em;
 }
 
-@media screen and (max-width: 1440px) {
-  .container-nav {
-    width: 45rem;
-    height: 4.3rem;
+#mode {
+  opacity: 0;
+}
+
+@media only screen and (max-width: 1440px) {
+  body {
+    height: 900;
   }
-  .logo-sun {
-    margin-left: 30rem;
+  .git-hub-container {
+    width: 730px;
   }
-  .container {
-    width: 45rem;
+  .title-and-mode-container {
+    width: 730px;
   }
-  .searchLogo {
-    padding-left: 2rem;
+  #search-input {
+    width: 730px;
   }
-  .placeholder {
-    margin-left: -17rem;
-  }
-  .search-btn {
-    margin-left: -3rem;
-    padding: 0.3rem 1rem 0.3rem 1rem;
-  }
-  .grid-container {
-    width: 45rem;
-    height: 27.7rem;
-  }
-  .cat-photo {
-    width: 7.3rem;
-    height: 7.3rem;
-  }
-  .joined {
-    margin-left: 23rem;
-  }
-  .item3 {
-    width: 30rem;
-    height: 5.3rem;
-  }
-  .repos {
-    margin-left: 1.8rem;
-    margin-top: 1rem;
-    font-size: 0.8rem;
-  }
-  .pone {
-    margin-left: 1.8rem;
-    font-size: 1.3rem;
-  }
-  .folowers {
-    font-size: 0.8rem;
-  }
-  .following {
-    font-size: 0.8rem;
-  }
-  .pthree {
-    font-size: 1.3rem;
-  }
-  .item4 {
-    width: 25rem;
-  }
-  .sanfrancisco {
-    font-size: 0.9rem;
-  }
-  .available {
-    font-size: 0.9rem;
-  }
-  .github-link {
-    font-size: 0.9rem;
+  .search-container {
+    width: 730px;
   }
 }
-@media screen and (max-width: 768px) {
-  .container-nav {
-    width: 35.8rem;
-    height: 1.3rem;
+
+@media only screen and (max-width: 768px) {
+  body {
+    height: 600;
   }
-  .logo-sun {
-    margin-left: 28rem;
+  .git-hub-container {
+    width: 537px;
   }
-  .container {
-    width: 35.8rem;
+  .title-and-mode-container {
+    width: 537px;
   }
-  .searchLogo {
-    padding-left: 1.5rem;
+  #search-input {
+    width: 537px;
   }
-  .placeholder {
-    margin-left: -20rem;
-  }
-  .search-btn {
-    width: 5rem;
-    height: 1.5rem;
-    padding: 1rem 4.7rem 2.5rem 1.8rem;
-    margin: 0.3rem 0.6rem 0.3rem -11rem;
-    font-size: 1.2rem;
+  .search-container {
+    width: 537px;
   }
   .grid-container {
+    display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 10rem auto auto;
-    width: 35.8rem;
-    height: 30rem;
+    grid-template-rows: auto auto auto;
+    gap: 0.2rem;
+    width: 537px;
+    height: 481px;
+    margin-top: 3rem;
+    border-radius: 0.9rem;
+    background-color: var(--color-bg);
   }
   .item1 {
     grid-column: 1/2;
-  }
-  .cat-photo {
-    width: 7.3rem;
-    height: 7.3rem;
-  }
-  .item2 {
-    grid-column: 1/3;
     grid-row: 1/2;
   }
-  .otoCat-text {
-    margin-left: 11rem;
+  .cat-photo {
+    width: 6rem;
+    height: 6rem;
+  }
+  .item2 {
+    grid-column: 1/2;
+    grid-row: 1/2;
   }
   .joined {
-    margin-top: 2rem;
-    margin-left: 11rem;
+    margin-top: 1.4rem;
+    margin-left: 9rem;
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
   }
   .atotoCat {
-    margin-left: 11rem;
-    margin-top: -3.5rem;
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    margin-left: 9rem;
+    margin-top: -3rem;
+    color: #0079ff;
+  }
+
+  .otoCat-text {
+    margin-top: 1.4rem;
+    margin-left: 9rem;
   }
   .nobio {
     display: none;
   }
+  .no-bio {
+    margin-top: 3.5rem;
+  }
   .nobio-lorem {
     display: inline-block;
-    margin-top: 5rem;
-    margin-left: 2.5rem;
+    margin-top: 0.4rem;
+    margin-left: 1.7rem;
+    width: 29rem;
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--color-fg);
   }
   .item3 {
     width: 30rem;
-    height: 5.3rem;
-    margin-top: 3rem;
-    margin-left: -11rem;
-  }
-  .repos {
-    margin-left: 1.8rem;
-    margin-top: 1rem;
-    font-size: 0.8rem;
-  }
-  .pone {
-    margin-left: 1.8rem;
-    font-size: 1.3rem;
-  }
-  .folowers {
-    font-size: 0.8rem;
-  }
-  .following {
-    font-size: 0.8rem;
-  }
-  .pthree {
-    font-size: 1.3rem;
+    height: 6.3rem;
+    margin-top: 0.4rem;
+    margin-left: 1.2rem;
+    background-color: var(--color-pg);
+    border-radius: 0.6rem;
   }
   .item4 {
-    margin-left: -11rem;
-    width: 25rem;
-  }
-  .sanfrancisco {
-    font-size: 0.9rem;
-  }
-  .link-logo {
-    margin-top: 1rem;
-  }
-  .available {
-    font-size: 0.9rem;
-  }
-  .github-link {
-    font-size: 0.9rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 480px;
+    height: 85px;
+    margin-left: 2rem;
+    padding-bottom: 2em;
   }
 }
-@media screen and (max-width:375px) {
-  .container-nav {
-    width: 20.4rem;
-    height: 2.3rem;
+
+@media only screen and (max-width: 375px) {
+  body {
+    font-size: 10px;
+    height: 600px;
   }
-  .logo-sun {
-    margin-left: 10rem;
+  .avatar > img {
+    width: 8em;
+    height: 8em;
   }
-  .placeholder{
-    margin-left: -10rem;
-    font-weight: 200;
+  .name {
+    font-size: 1.3em;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+  .avatar-and-description {
+    margin: 1em;
+  }
+  .git-hub-container {
+    width: 327px;
+  }
+  .title-and-mode-container {
+    width: 327px;
+  }
+  #search-input {
+    width: 327px;
+  }
+  .search-container {
+    width: 327px;
+  }
+  #search-input::placeholder {
     font-size: 0.8rem;
   }
-  .search-btn {
-    padding: 0.4rem 4.3rem 1.9rem 1.1rem;
-    margin: 0.3rem 0.6rem 0.3rem -11rem;
-    font-size: 1.1rem;
-  }
-  .container{
-    width: 20.4rem;
-    height: 3.7rem;
+  #btn-search {
+    margin-top: 0.5em;
+    height: 35px;
+    width: 80px;
+    font-weight: 700;
+    font-size: 12px;
   }
   .grid-container {
-    width: 20.4rem;
-    height: 32.3rem;
-  }
-  .cat-photo {
-    width: 4.3rem;
-    height: 4.3rem;
-  }
-  .otoCat-text {
-    margin-left: 8rem;
-    font-size: 1rem;
-  }
-  .atotoCat {
-    margin-left: 8rem;
-    margin-top: -3rem;
-    font-size: 0.8rem;
-  }
-  .joined {
-    margin-top: 0.8rem;
-    margin-left: 8rem;
-    font-size: 0.8rem;
+    width: 327px;
+    height: 517px;
+    margin-top: 1rem;
   }
   .nobio-lorem {
-    display: inline-block;
-    width: 16.5rem;
-    margin-top: 3rem;
-    margin-left: 2rem;
+    width: 17rem;
+    color: var(--color-fg);
   }
   .item3 {
-    width: 17.4rem;
-    height: 5.3rem;
-    margin-top: 2rem;
-    margin-left: -5.5rem;
-  }
-  .repos {
-    margin-left: 1.8rem;
-    margin-top: 1rem;
-    font-size: 0.6rem;
-  }
-  .pone {
-    margin-left: 1.8rem;
-    font-size: 1rem;
-  }
-  .folowers {
-    font-size: 0.6rem;
-    margin-left: 7rem;
-  }
-  .ptwo{
-    margin-left: 7rem;
-    font-size: 0.88rem;
-  }
-  .following{
-    margin-left: 12rem;
-    font-size:0.6;
-  }
-  .pthree {
-    margin-left: 12rem;
-    font-size: 1rem;
-  }
-  .item4 {
-    margin-left: -5rem;
-    width: 17rem;
-    height: 8rem;
-  }
-  .sanfrancisco{
-    margin-top: -1.4rem;
-    margin-left: 2rem;
-    font-size: 0.8rem;
-  }
-  .location {
-    margin: 0;
-    margin-top: -3rem;
-  }
-  .link-logo {
-    margin-top: 1rem;
-  }
-  .link {
-    margin-top: 1rem;
-    margin-left: 0.7rem;
-    font-size: 0.8rem;
-  }
-  .tweeter-logo {
+    width: 285px;
+    height: 85px;
+    margin-top: 0rem;
     margin-left: 1rem;
   }
-  .available {
+  .repos {
+    margin-left: 1.7rem;
     margin-top: 1rem;
-    margin-left: 2.5rem;
     font-size: 0.8rem;
+    line-height: 1rem;
   }
-  .company-logo {
-    margin-top: 1.3rem;
-    margin-left: 0.2rem;
+  .pone {
+    margin-left: 2.3rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
-  .github-link {
-    /* margin-top: -1rem; */
-    margin-left: 0rem;
-    font-size: 0.8rem; 
+  .folowers {
+    margin-left: 7rem;
+    margin-top: -2.5rem;
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+  .ptwo {
+    margin-left: 7rem;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+  .following {
+    margin-left: 13rem;
+    margin-top: -2.5rem;
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+  .pthree {
+    margin-left: 14rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .item4 {
+   display: flex;
+   flex-direction: column;
+  justify-content: space-between;
+    width: 185px;
+    height: 127px;
+    margin-left: 2rem;
+    padding-bottom: 2em;
   }
 }
